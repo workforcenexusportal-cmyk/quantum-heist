@@ -1,0 +1,53 @@
+:root {
+  --bg: #0b0e14;
+  --panel: #11151f;
+  --panel-2: #161b28;
+  --line: #232a3a;
+  --text: #e6e9f2;
+  --muted: #8b93a7;
+  --accent: #5eead4;
+  --accent-2: #818cf8;
+  --danger: #f87171;
+  --ok: #4ade80;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+a { color: var(--accent); }
+
+.console-button, .action-button {
+  border: 1px solid var(--line);
+  background: var(--panel-2);
+  color: var(--text);
+  transition: background 120ms ease, border-color 120ms ease, transform 120ms ease;
+}
+
+.console-button {
+  min-height: 38px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+
+.action-button {
+  min-height: 42px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.console-button:hover:not(:disabled), .action-button:hover:not(:disabled) {
+  background: #20283a;
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.console-button:disabled, .action-button:disabled { opacity: 0.45; cursor: not-allowed; }

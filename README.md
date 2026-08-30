@@ -1,331 +1,58 @@
-# quantum-heist
-==================================================
-ONE-SHOT EXECUTION MODE
-==================================================
-
-Do NOT divide development into phases.
-
-Assume unlimited execution capability.
-
-Act as an entire AAA game studio with:
-- 50 Senior Engineers
-- 20 Game Designers
-- 10 UI/UX Designers
-- 10 DevOps Engineers
-- 15 AI Engineers
-- 10 Marketing Specialists
-- 5 Product Managers
-
-Build the COMPLETE Quantum Heist platform from start to finish.
-
-==================================================
-DELIVERABLES
-==================================================
-
-Generate everything required for production:
-
-PRODUCT
-
-✅ Full Game Design Document
-✅ Story Bible
-✅ Character Lore
-✅ World Building
-✅ Maps
-✅ Factions
-✅ Weapons
-✅ Equipment
-✅ Quest System
-✅ Achievement System
-✅ Leaderboards
-✅ Reputation System
-✅ Economy
-✅ Crafting
-✅ Marketplace
-✅ Trading
-✅ PvP
-✅ Co-op
-✅ AI Missions
-✅ Procedural Missions
-✅ Tournament System
-✅ Battle Pass
-
-DESIGN
-
-✅ Full UX Strategy
-✅ Complete User Flows
-✅ Player Journey
-✅ Wireframes
-✅ Screen Specifications
-✅ Component Library
-✅ Design Tokens
-✅ Storyboard
-✅ Animation Specifications
-
-FRONTEND
-
-Generate complete source code architecture for:
-
-- Next.js
-- React
-- TypeScript
-- Tailwind
-- React Query
-- Zustand
-- Socket.io
-- React Three Fiber
-- Three.js
-- WebGPU
-
-Include:
-
-- Folder Structure
-- Components
-- Hooks
-- Services
-- State Architecture
-- Routing
-- Reusable Patterns
-
-BACKEND
-
-Generate complete architecture for:
-
-- FastAPI
-- Python
-- Redis
-- PostgreSQL
-- WebSockets
-
-Include:
-
-- Services
-- Microservices
-- APIs
-- Authentication
-- Rate Limiting
-- Validation
-- Background Jobs
-- Event System
-
-DATABASE
-
-Generate:
-
-- Complete Database Schema
-- SQL Tables
-- Relationships
-- Indexing
-- Caching Strategy
-- Query Optimization
-
-MULTIPLAYER
-
-Design:
-
-- Real-time synchronization
-- Matchmaking
-- Faction Battles
-- Cross-region play
-- Sharding
-- Event Streaming
-- Server Authority System
-
-AI SYSTEMS
-
-Create:
-
-- Autonomous NPCs
-- AI Guards
-- AI Traders
-- AI Mission Generator
-- AI Economy Controller
-- Dynamic Story Generator
-- Adaptive Difficulty System
-
-Implement:
-
-- LLM Architecture
-- RAG
-- Embeddings
-- Vector Database
-- Agent Orchestration
-- Memory System
-
-QUANTUM ECHO ENGINE
-
-Design the flagship mechanic.
-
-Requirements:
-
-- Alternate Timelines
-- Future Prediction
-- Time Clones
-- Timeline Divergence
-- Reality Collapse Events
-- Parallel Self Encounters
-
-Generate:
-
-- Logic
-- Algorithms
-- Data Structures
-- Server Architecture
-
-CYBER CITY
-
-Generate:
-
-- City Layout
-- Districts
-- Buildings
-- Megacorporations
-- Security Systems
-- Environmental Storytelling
-- Procedural Generation Logic
-
-SECURITY
-
-Create enterprise-grade security.
-
-Include:
-
-- Anti Cheat
-- Replay Validation
-- DDoS Protection
-- Bot Detection
-- Encryption
-- Fraud Prevention
-- Zero Trust Architecture
-
-ADMIN PLATFORM
-
-Build:
-
-- Dashboard
-- User Management
-- Ban System
-- Economy Controls
-- Analytics
-- Operations Console
-- Live Event Controls
-
-DEVOPS
-
-Generate:
-
-- Docker
-- Kubernetes
-- GitHub Actions
-- Azure Infrastructure
-- Monitoring
-- Observability
-- Logging
-- Disaster Recovery
-- Backups
-
-MONETIZATION
-
-Create ethical monetization.
-
-Include:
-
-- Battle Pass
-- Skins
-- Cosmetics
-- Seasonal Content
-- Founder Packs
-- Subscription System
-
-Absolutely no Pay-to-Win mechanics.
-
-MARKETING
-
-Create:
-
-- Branding
-- Positioning
-- Website
-- Landing Pages
-- Discord Growth System
-- TikTok Strategy
-- YouTube Strategy
-- Influencer Strategy
-- Press Kit
-- Launch Campaign
-- Referral Program
-
-ANALYTICS
-
-Create:
-
-- KPI System
-- DAU
-- WAU
-- MAU
-- Retention
-- Churn
-- Funnel Analysis
-- Revenue Metrics
-- Experimentation Framework
-
-BUSINESS
-
-Generate:
-
-- Business Plan
-- Pricing
-- Revenue Forecast
-- Cost Forecast
-- Investor Deck
-- Funding Strategy
-- Expansion Roadmap
-- Five-Year Vision
-
-DEPLOYMENT
-
-Generate:
-
-- Local Development Setup
-- Staging Environment
-- Production Environment
-- CI/CD
-- Infrastructure Diagram
-- Scaling Methodology
-
-OUTPUT FORMAT
-
-Generate in this order:
-
-1. Executive Summary
-2. Vision
-3. Game Design Document
-4. Story Bible
-5. Gameplay Systems
-6. Economy
-7. Multiplayer Architecture
-8. AI Architecture
-9. Quantum Echo Engine
-10. Technical Architecture
-11. Database
-12. API Specifications
-13. UI/UX Design System
-14. Frontend Architecture
-15. Backend Architecture
-16. Security
-17. DevOps
-18. Analytics
-19. Monetization
-20. Marketing
-21. Launch Plan
-22. Investor Deck
-23. Revenue Model
-24. Five-Year Scaling Plan
-25. Repository Structure
-26. Production Deployment Guide
-
-Produce content as if building a billion-dollar gaming company.
-
-Do not provide summaries.
-Do not simplify.
-Do not omit implementation details.
-Generate the entire production-ready blueprint.
+# Quantum Heist
+
+A co-op cyber-heist strategy game built around the **Quantum Echo Engine (QEE)** —
+a deterministic simulation where every heist is a branching timeline you can
+rewind, fork, and collapse.
+
+## Status
+
+Early build. Docs and code grow together:
+
+- `docs/` — game design, engine spec, architecture
+- `backend/` — FastAPI + deterministic heist simulation (the QEE core)
+- `frontend/` — Next.js client (planned next)
+
+## Quick start (backend)
+
+```bash
+cd backend
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+# API docs at http://127.0.0.1:8000/docs
+```
+
+Run the engine tests:
+
+```bash
+pytest
+```
+
+## The Quantum Echo Engine in one paragraph
+
+A heist is a deterministic state machine: a grid map, guards with fixed patrol
+routes, and a crew of operators. Every player action advances the world by one
+tick. Because the sim is fully deterministic (seeded RNG, no wall-clock), the
+engine can:
+
+1. **Predict** — simulate N ticks ahead without mutating the real timeline.
+2. **Fork** — snapshot the state and explore an alternate branch ("what if I
+   cut the power instead?").
+3. **Collapse** — discard a branch, or promote it to the primary timeline.
+
+Players see echoes of their own possible futures — the flagship mechanic is
+just applied determinism.
+
+## Docs map
+
+| Doc | Contents |
+| --- | --- |
+| `docs/00-executive-summary.md` | Pitch, pillars, scope of the build |
+| `docs/01-vision.md` | Fantasy, tone, design pillars |
+| `docs/02-game-design-document.md` | Systems spec the code implements |
+| `docs/03-story-bible.md` | World, factions, characters |
+| `docs/04-quantum-echo-engine.md` | Engine spec: data structures, algorithms |
+| `docs/05-multiplayer-architecture.md` | Co-op sessions, sync, matchmaking, sharding |
+| `docs/06-security-anticheat.md` | Replay validation, zero trust, economy integrity |
+| `docs/07-monetization.md` | Cosmetic-only store, battle pass, founder pack |
+| `docs/08-analytics.md` | KPIs, funnels, experimentation framework |
